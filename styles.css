@@ -106,7 +106,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2.5rem;
-  align-items: center;
+  align-items: stretch;
 }
 
 .hero-content {
@@ -166,31 +166,31 @@ body {
   color: var(--text-secondary);
 }
 
-/* Avatar placeholder: circle with bust icon */
+/* Avatar: fills right column */
 .hero-visual {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
+  min-width: 0;
+  min-height: 280px;
 }
 
 .avatar-placeholder {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  border: 2px solid var(--border-strong);
-  background: var(--bg-secondary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+  border-radius: var(--radius);
   overflow: hidden;
+  flex: 1;
 }
 
 .avatar-img {
   width: 100%;
   height: 100%;
+  max-width: 100%;
+  max-height: 100%;
   object-fit: cover;
+  object-position: center center;
   display: block;
+  vertical-align: middle;
 }
 
 .avatar-icon {
@@ -433,11 +433,11 @@ body {
 
   .hero-visual {
     order: -1;
+    min-height: 260px;
   }
 
   .avatar-placeholder {
-    width: 160px;
-    height: 160px;
+    min-height: 260px;
   }
 
   .avatar-icon {
