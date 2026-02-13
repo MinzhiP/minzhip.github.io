@@ -1,0 +1,255 @@
+:root {
+  --bg-1: #050816;
+  --bg-2: #0d1430;
+  --panel: rgba(16, 26, 51, 0.58);
+  --panel-border: rgba(148, 163, 184, 0.24);
+  --text: #e8eefc;
+  --muted: #a7b4d6;
+  --accent: #7dd3fc;
+  --accent-2: #a78bfa;
+  --timeline: rgba(125, 211, 252, 0.4);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+  line-height: 1.65;
+  color: var(--text);
+  background: radial-gradient(circle at 8% 12%, #18275c 0%, transparent 26%),
+    radial-gradient(circle at 92% 85%, #2a165f 0%, transparent 30%),
+    linear-gradient(160deg, var(--bg-1), var(--bg-2) 45%, #0a1635 100%);
+  position: relative;
+  overflow-x: hidden;
+}
+
+.page-bg {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.orb {
+  position: absolute;
+  border-radius: 999px;
+  filter: blur(2px);
+  opacity: 0.55;
+}
+
+.orb-one {
+  width: 320px;
+  height: 320px;
+  left: -80px;
+  top: 5%;
+  background: radial-gradient(circle, rgba(125, 211, 252, 0.38), rgba(125, 211, 252, 0));
+}
+
+.orb-two {
+  width: 380px;
+  height: 380px;
+  right: -90px;
+  top: 28%;
+  background: radial-gradient(circle, rgba(167, 139, 250, 0.32), rgba(167, 139, 250, 0));
+}
+
+.orb-three {
+  width: 260px;
+  height: 260px;
+  left: 26%;
+  bottom: -50px;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.28), rgba(56, 189, 248, 0));
+}
+
+.shell {
+  position: relative;
+  z-index: 1;
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 3.25rem 1.2rem 3.5rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.glass-panel {
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  border-radius: 18px;
+  padding: 1.45rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 12px 30px rgba(7, 12, 26, 0.4);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.25;
+  margin: 0;
+}
+
+h1 {
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  letter-spacing: -0.03em;
+  margin: 0.25rem 0 0.75rem;
+}
+
+h2 {
+  margin-bottom: 0.85rem;
+  color: #d7e5ff;
+  font-size: clamp(1.35rem, 2.2vw, 1.8rem);
+}
+
+h3 {
+  font-size: 1.07rem;
+  margin-bottom: 0.35rem;
+}
+
+h4 {
+  margin: 0.85rem 0 0.4rem;
+  color: #c6dafd;
+}
+
+p {
+  margin: 0;
+}
+
+.eyebrow {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.hero-summary {
+  max-width: 64ch;
+  color: #d7e3ff;
+}
+
+.hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 1rem;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.72rem;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  color: #d5ebff;
+  background: linear-gradient(100deg, rgba(29, 78, 216, 0.35), rgba(56, 189, 248, 0.15));
+  border: 1px solid rgba(125, 211, 252, 0.45);
+}
+
+.summary p,
+.skill-card p,
+.timeline-item li,
+.education p {
+  color: var(--muted);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.85rem;
+}
+
+.skill-card {
+  border: 1px solid rgba(125, 211, 252, 0.22);
+  border-radius: 14px;
+  background: rgba(8, 14, 33, 0.56);
+  padding: 1rem;
+}
+
+.timeline {
+  position: relative;
+  margin-left: 0.2rem;
+  padding-left: 1.35rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0.2rem;
+  top: 0.45rem;
+  bottom: 0.45rem;
+  width: 2px;
+  background: linear-gradient(var(--timeline), rgba(167, 139, 250, 0.45));
+}
+
+.timeline-item {
+  position: relative;
+  background: rgba(7, 13, 29, 0.55);
+  border: 1px solid rgba(103, 151, 255, 0.22);
+  border-radius: 14px;
+  padding: 1rem 1rem 0.9rem;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -1.45rem;
+  top: 1rem;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  background: linear-gradient(160deg, var(--accent), var(--accent-2));
+  box-shadow: 0 0 0 3px rgba(15, 23, 42, 0.9);
+}
+
+.timeline-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+ul {
+  margin: 0.45rem 0 0;
+  padding-left: 1.15rem;
+}
+
+li + li {
+  margin-top: 0.22rem;
+}
+
+.meta {
+  color: #b8c6ea;
+  font-size: 0.9rem;
+}
+
+.education-card {
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  border-radius: 14px;
+  padding: 1rem;
+  background: rgba(8, 14, 33, 0.56);
+}
+
+@media (max-width: 700px) {
+  .shell {
+    padding: 2.3rem 0.9rem 2.6rem;
+  }
+
+  .glass-panel {
+    padding: 1.1rem;
+  }
+
+  .timeline {
+    padding-left: 1.1rem;
+  }
+
+  .timeline-item::before {
+    left: -1.18rem;
+  }
+}
