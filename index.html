@@ -3,26 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Michelle P | Portfolio</title>
+    <title>Michelle P | AI Operations Portfolio</title>
     <meta
       name="description"
       content="Professional portfolio for Michelle P, focused on AI Operations, Data Analysis, and Production Systems."
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="hero">
-      <div class="container">
-        <p class="eyebrow">Portfolio</p>
-        <h1>Michelle P</h1>
-        <p class="location">Calgary, Alberta, Canada</p>
-        <p class="headline">Remote | AI Operations | Data Analysis | Production Systems</p>
-      </div>
-    </header>
+    <div class="page-bg">
+      <span class="orb orb-one" aria-hidden="true"></span>
+      <span class="orb orb-two" aria-hidden="true"></span>
+      <span class="orb orb-three" aria-hidden="true"></span>
+    </div>
 
-    <main class="container">
-      <section>
-        <h2>Summary</h2>
+    <main class="shell">
+      <section class="hero glass-panel">
+        <p class="eyebrow">AI Operations Portfolio</p>
+        <h1>Michelle P</h1>
+        <p class="hero-summary">
+          Bridging production support excellence and AI quality operations to deliver reliable,
+          compliant systems at enterprise scale.
+        </p>
+        <div class="hero-meta">
+          <span class="chip">Calgary, Alberta, Canada</span>
+          <span class="chip">Remote</span>
+          <span class="chip">AI Operations</span>
+          <span class="chip">Production Systems</span>
+        </div>
+      </section>
+
+      <section class="summary glass-panel">
+        <h2>Professional Summary</h2>
         <p>
           AI Operations–oriented Support Specialist with 4+ years in Dayforce HCM production
           environments. Experienced in LLM evaluation, prompt refinement, SQL-based root cause
@@ -32,25 +50,25 @@
         </p>
       </section>
 
-      <section>
+      <section class="skills glass-panel">
         <h2>Core Skills</h2>
         <div class="skills-grid">
-          <article>
+          <article class="skill-card">
             <h3>AI Operations &amp; LLMs</h3>
             <p>Model Monitoring, GPT-4o Evaluation, Prompt Refinement, Output Quality Review</p>
           </article>
-          <article>
+          <article class="skill-card">
             <h3>Data &amp; Technical Analysis</h3>
             <p>SQL, REST API Investigation, Log Analysis, Workflow Automation, Git</p>
           </article>
-          <article>
+          <article class="skill-card">
             <h3>Systems &amp; Operations</h3>
             <p>
               Production Support, Root Cause Analysis, Knowledge Optimization, HRIS (Dayforce
               HCM, PowerPay, Wallet)
             </p>
           </article>
-          <article>
+          <article class="skill-card">
             <h3>Process &amp; Collaboration</h3>
             <p>
               Business Requirements, Backlog Contribution, Cross-Functional Delivery, Data Privacy
@@ -60,117 +78,125 @@
         </div>
       </section>
 
-      <section>
-        <h2>Experience</h2>
+      <section class="experience glass-panel">
+        <h2>Experience Timeline</h2>
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-header">
+              <h3>Dayforce</h3>
+              <p class="meta">May 2024 – Present · Remote</p>
+            </div>
+            <h4>Support Specialist IV (Billable Services)</h4>
+            <ul>
+              <li>
+                Evaluate AI-assisted support outputs in production, identifying hallucination
+                risks, tone inconsistencies, and compliance gaps to improve response reliability.
+              </li>
+              <li>
+                Detect recurring system defects through SQL analysis and case trend review;
+                escalate validated findings leading to engineering fixes impacting enterprise
+                payroll clients.
+              </li>
+              <li>
+                Convert operational pain points into structured business requirements and
+                contribute to backlog refinement, user stories, and acceptance criteria.
+              </li>
+              <li>Optimize knowledge base documentation and internal workflows.</li>
+              <li>
+                Partner with Engineering, QA, Compliance, and Tax teams to resolve complex,
+                privacy-sensitive payroll issues in high-stakes environments.
+              </li>
+              <li>
+                Consistently exceeded performance benchmarks by 20–70% and maintained 9.0 OSAT,
+                supporting customer retention and billable service value delivery.
+              </li>
+            </ul>
 
-        <article class="role">
-          <h3>Dayforce</h3>
-          <h4>Support Specialist IV (Billable Services)</h4>
-          <p class="meta">May 2024 – Present | Remote</p>
-          <ul>
-            <li>
-              Evaluate AI-assisted support outputs in production, identifying hallucination risks,
-              tone inconsistencies, and compliance gaps to improve response reliability.
-            </li>
-            <li>
-              Detect recurring system defects through SQL analysis and case trend review; escalate
-              validated findings leading to engineering fixes impacting enterprise payroll clients.
-            </li>
-            <li>
-              Convert operational pain points into structured business requirements and contribute
-              to backlog refinement, user stories, and acceptance criteria.
-            </li>
-            <li>Optimize knowledge base documentation and internal workflows.</li>
-            <li>
-              Partner with Engineering, QA, Compliance, and Tax teams to resolve complex,
-              privacy-sensitive payroll issues in high-stakes environments.
-            </li>
-            <li>
-              Consistently exceeded performance benchmarks by 20–70% and maintained 9.0 OSAT,
-              supporting customer retention and billable service value delivery.
-            </li>
-          </ul>
+            <h4>Support Analyst III</h4>
+            <p class="meta">Jul 2021 – May 2024 · Remote</p>
+            <ul>
+              <li>
+                Conducted deep-dive SQL investigations to audit payroll discrepancies, validate
+                data integrity, and diagnose production anomalies.
+              </li>
+              <li>
+                Identified systemic issue patterns and escalated actionable defect reports,
+                contributing to multiple production bug resolutions.
+              </li>
+              <li>
+                Participated in AI feedback and behavior-tuning initiatives by reviewing generated
+                outputs and recommending refinements.
+              </li>
+              <li>
+                Authored and updated knowledge articles and process documentation to strengthen
+                self-service capability and internal consistency.
+              </li>
+              <li>
+                Communicated technical findings and operational risk insights to both technical and
+                non-technical stakeholders.
+              </li>
+            </ul>
+          </article>
 
-          <h4>Support Analyst III</h4>
-          <p class="meta">Jul 2021 – May 2024 | Remote</p>
-          <ul>
-            <li>
-              Conducted deep-dive SQL investigations to audit payroll discrepancies, validate data
-              integrity, and diagnose production anomalies.
-            </li>
-            <li>
-              Identified systemic issue patterns and escalated actionable defect reports,
-              contributing to multiple production bug resolutions.
-            </li>
-            <li>
-              Participated in AI feedback and behavior-tuning initiatives by reviewing generated
-              outputs and recommending refinements.
-            </li>
-            <li>
-              Authored and updated knowledge articles and process documentation to strengthen
-              self-service capability and internal consistency.
-            </li>
-            <li>
-              Communicated technical findings and operational risk insights to both technical and
-              non-technical stakeholders.
-            </li>
-          </ul>
-        </article>
+          <article class="timeline-item">
+            <div class="timeline-header">
+              <h3>Userful</h3>
+              <p class="meta">Oct 2019 – Mar 2021 · Calgary, AB</p>
+            </div>
+            <h4>Internal Application Developer</h4>
+            <ul>
+              <li>
+                Developed MySQL-driven reporting solutions enabling Sales, Support, and Marketing
+                teams to make data-informed decisions.
+              </li>
+              <li>
+                Led CRM and marketing platform integrations via REST APIs, translating business
+                requirements into technical implementation.
+              </li>
+              <li>
+                Improved system data accuracy and reporting reliability through validation and
+                workflow enhancements aligned with ITIL practices.
+              </li>
+            </ul>
 
-        <article class="role">
-          <h3>Userful</h3>
-          <h4>Internal Application Developer</h4>
-          <p class="meta">Oct 2019 – Mar 2021 | Calgary, AB</p>
-          <ul>
-            <li>
-              Developed MySQL-driven reporting solutions enabling Sales, Support, and Marketing
-              teams to make data-informed decisions.
-            </li>
-            <li>
-              Led CRM and marketing platform integrations via REST APIs, translating business
-              requirements into technical implementation.
-            </li>
-            <li>
-              Improved system data accuracy and reporting reliability through validation and
-              workflow enhancements aligned with ITIL practices.
-            </li>
-          </ul>
+            <h4>Linux Technical Solutions Engineer (Tier 2)</h4>
+            <p class="meta">Aug 2018 – Oct 2019</p>
+            <ul>
+              <li>
+                Delivered advanced Linux (CentOS/RedHat) troubleshooting in enterprise production
+                environments.
+              </li>
+              <li>
+                Diagnosed networking and application-layer failures to restore uptime and reduce
+                customer disruption.
+              </li>
+              <li>Promoted to Tier 2 based on technical performance and client satisfaction.</li>
+            </ul>
+          </article>
 
-          <h4>Linux Technical Solutions Engineer (Tier 2)</h4>
-          <p class="meta">Aug 2018 – Oct 2019</p>
-          <ul>
-            <li>
-              Delivered advanced Linux (CentOS/RedHat) troubleshooting in enterprise production
-              environments.
-            </li>
-            <li>
-              Diagnosed networking and application-layer failures to restore uptime and reduce
-              customer disruption.
-            </li>
-            <li>Promoted to Tier 2 based on technical performance and client satisfaction.</li>
-          </ul>
-        </article>
-
-        <article class="role">
-          <h3>Snapdragon Mobile Phones Inc.</h3>
-          <h4>User Support Technician</h4>
-          <p class="meta">Oct 2016 – Aug 2018</p>
-          <ul>
-            <li>
-              Provided multi-channel technical support for hardware, operating systems, and
-              networking issues.
-            </li>
-            <li>
-              Improved documentation practices and reduced repeat incidents through structured issue
-              tracking and user training.
-            </li>
-          </ul>
-        </article>
+          <article class="timeline-item">
+            <div class="timeline-header">
+              <h3>Snapdragon Mobile Phones Inc.</h3>
+              <p class="meta">Oct 2016 – Aug 2018</p>
+            </div>
+            <h4>User Support Technician</h4>
+            <ul>
+              <li>
+                Provided multi-channel technical support for hardware, operating systems, and
+                networking issues.
+              </li>
+              <li>
+                Improved documentation practices and reduced repeat incidents through structured
+                issue tracking and user training.
+              </li>
+            </ul>
+          </article>
+        </div>
       </section>
 
-      <section>
+      <section class="education glass-panel">
         <h2>Education</h2>
-        <article class="role">
+        <article class="education-card">
           <h3>Southern Alberta Institute of Technology (SAIT)</h3>
           <p>Associate Degree, Information Technology</p>
           <p class="meta">GPA: 3.88</p>
